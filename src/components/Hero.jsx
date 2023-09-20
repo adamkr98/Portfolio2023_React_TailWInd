@@ -28,15 +28,18 @@ const Hero = () => {
       </div>
 
       <div className='md:w-2/3 md:flex-col md:items-center flex flex-col items-center justify-center'>
-        <p className='w-full text-white pb-4 ml-12 mr-12 text-center text-lg md:mr-12'>
+        <p className=' text-white pb-4 ml-12 mr-12 text-center text-lg'>
           Hi I'm Adam and I'm a Junior Front End Developer / CSS Geek.
         </p>
 
-        <button className='w-2/3 mx-auto text-white border border-blue-50 flex justify-center rounded-md hover:text-black hover:bg-white mb-4 md:mb-8 md:w-28 md:h-8 md:items-center'>
-          Say Hello
-        </button>
+        <button className='xs:w-40 xs:h-12 xs:mb-8 text-white border border-blue-50  rounded-md hover:text-black hover:bg-white mb-4'>
+  Say Hello
+</button>
 
-        <div className='w-1/3 md:w-1/4 flex justify-between items-center mb-4'>
+
+
+
+        <div className='w-1/3 md:w-1/3 flex justify-between items-center mb-4'>
           <FaGithub className="w-12 h-12 text-gray-500 hover:text-gray-700" />
           <FaLinkedin className="w-12 h-12 text-gray-500 hover:text-gray-700" />
         </div>

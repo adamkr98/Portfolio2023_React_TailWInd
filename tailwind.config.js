@@ -9,8 +9,19 @@ module.exports = {
         '5': '20rem', 
        
       },
-
+      screens: {
+        'xs': '370px',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-order')({
+      order: {
+        sm: 0, 
+        md: 1, 
+        lg: 2, 
+        xl: 3, 
+      },
+    }),
+  ],
 }
