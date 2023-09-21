@@ -9,11 +9,11 @@ const Navbar = () => {
       </div>
 
       {/* Right side */}
-      <div className="w-full ml-4 flex justify-end">
+      <div className="w-full flex justify-end">
         <ul className=" flex space-x-4 items-center text-base mr-4 "> 
-          <li className='min-w-fit pt-0.5 pb-0.5 pl-0.5 pr-0.5 active:border-blue-50 hover:border-white border-transparent border-2'>ABOUT ME</li>
+          <li className='xs:min-w-fit pt-0.5 pb-0.5 pl-0.5 pr-0.5 active:border-blue-50 hover:border-white border-transparent border-2'>ABOUT ME</li>
           <li className='pt-0.5 pb-0.5 pl-0.5 pr-0.5 hover:border-white border-transparent border-2'>PROJECTS</li>
-          <li className='pt-0.5 pb-0.5 pl-0.5 pr-0.5 hover:border-white border-transparent border-2'>CONTACT</li>
+          <li className='pt-0.5 pb-0.5 pl-0.5 pr-0 hover:border-white border-transparent border-2'>CONTACT</li>
         </ul>
       </div>
     </div>
