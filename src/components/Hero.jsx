@@ -21,7 +21,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Hero = () => {
   return (
-    <div className='w-full md:h-[calc(3/4*100vh)] bg-black flex flex-col items-center md:pt-12 md:pb-12'>
+    <div className='overflowX w-full md:h-[calc(3/4*100vh)] overflow-hidden bg-black flex flex-col items-center md:pt-12 md:pb-12'>
       <div className='w-full md:w-4/5 flex flex-col md:flex-row-reverse justify-between items-center'>  
 
         <div className='w-2/3 md:w-1/3 mt-4 flex flex-col items-center md:flex-row md:items-center md:justify-between animate-slideLft'>
@@ -34,7 +34,7 @@ const Hero = () => {
           </p>
 
           <button className='xs:w-40 xs:h-12 xs:mb-8 text-white border border-blue-50  rounded-md hover:text-black hover:bg-white mb-4'>
-            Say Hello
+            Drop something
           </button>
 
 

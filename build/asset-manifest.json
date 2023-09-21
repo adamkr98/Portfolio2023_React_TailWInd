@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Portfolio2023_React_TailWInd/static/css/main.e9994d28.css",
-    "main.js": "/Portfolio2023_React_TailWInd/static/js/main.d1ee651d.js",
+    "main.css": "/Portfolio2023_React_TailWInd/static/css/main.1004d8f2.css",
+    "main.js": "/Portfolio2023_React_TailWInd/static/js/main.08a1485c.js",
     "static/media/AdamKrynskiPhotoProfil.jpg": "/Portfolio2023_React_TailWInd/static/media/AdamKrynskiPhotoProfil.3841e77c1633fbf6e5fa.jpg",
     "index.html": "/Portfolio2023_React_TailWInd/index.html",
-    "main.e9994d28.css.map": "/Portfolio2023_React_TailWInd/static/css/main.e9994d28.css.map",
-    "main.d1ee651d.js.map": "/Portfolio2023_React_TailWInd/static/js/main.d1ee651d.js.map"
+    "main.1004d8f2.css.map": "/Portfolio2023_React_TailWInd/static/css/main.1004d8f2.css.map",
+    "main.08a1485c.js.map": "/Portfolio2023_React_TailWInd/static/js/main.08a1485c.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9994d28.css",
-    "static/js/main.d1ee651d.js"
+    "static/css/main.1004d8f2.css",
+    "static/js/main.08a1485c.js"
   ]
 }
