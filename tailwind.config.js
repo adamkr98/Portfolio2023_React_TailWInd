@@ -9,20 +9,24 @@ module.exports = {
         slideLft: {
           '0%': {
             transform: 'translateX(400px)',
+            opacity: 0,
           },
 
           '100%': {
             transform: 'translateX(0px)',
+            opacity: 1,
           },
         },
 
         slideRgt: {
           '0%': {
             transform: 'translateX(-400px)',
+            opacity: 0,
           },
 
           '100%': {
             transform: 'translateX(0px)',
+            opacity: 1,
           },
         },
       },
@@ -31,8 +35,7 @@ module.exports = {
         slideRgt: 'slideRgt 2s ease'
       },
       width: {
-        '5': '20rem', 
-       
+        '5': '20rem',
       },
       screens: {
         'xs': '370px',
@@ -42,10 +45,10 @@ module.exports = {
   plugins: [
     require('tailwindcss-order')({
       order: {
-        sm: 0, 
-        md: 1, 
-        lg: 2, 
-        xl: 3, 
+        sm: 0,
+        md: 1,
+        lg: 2,
+        xl: 3,
       },
     }),
   ],

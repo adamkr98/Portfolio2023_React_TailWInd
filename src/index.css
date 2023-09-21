@@ -6,7 +6,6 @@
 
 @layer base {
   html {
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Text Me One', sans-serif; 
+    font-family: 'Roboto', sans-serif, 'Text Me One', sans-serif;
   }
 }
