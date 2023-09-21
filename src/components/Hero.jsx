@@ -33,7 +33,7 @@ const Hero = () => {
             Hi I'm Adam and I'm a Junior Front End Developer / CSS Geek.
           </p>
 
-          <button className='xs:w-40 xs:h-12 xs:mb-8 text-white border border-blue-50  rounded-md hover:text-black hover:bg-white mb-4'>
+          <button className='xs:w-40 xs:h-12 xs:mb-8 text-white border border-blue-50  rounded-md hover:text-black hover:bg-red mb-4'>
             Say Hello
           </button>
 
