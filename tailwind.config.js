@@ -5,6 +5,31 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        slideLft: {
+          '0%': {
+            transform: 'translateX(400px)',
+          },
+
+          '100%': {
+            transform: 'translateX(0px)',
+          },
+        },
+
+        slideRgt: {
+          '0%': {
+            transform: 'translateX(-400px)',
+          },
+
+          '100%': {
+            transform: 'translateX(0px)',
+          },
+        },
+      },
+      animation: {
+        slideLft: 'slideLft 2s ease',
+        slideRgt: 'slideRgt 2s ease'
+      },
       width: {
         '5': '20rem', 
        
