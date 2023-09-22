@@ -5,10 +5,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      transitionDuration: {
+        '800': '800ms', 
+        '100': '100ms',
+      },
       keyframes: {
         slideLft: {
           '0%': {
-            transform: 'translateX(400px)',
+            transform: 'translateX(100px)',
             opacity: 0,
           },
 
@@ -20,7 +24,7 @@ module.exports = {
 
         slideRgt: {
           '0%': {
-            transform: 'translateX(-400px)',
+            transform: 'translateX(-100px)',
             opacity: 0,
           },
 

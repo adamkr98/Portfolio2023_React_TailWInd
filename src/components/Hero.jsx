@@ -24,7 +24,7 @@ const Hero = () => {
     <div className='overflowX w-full md:h-[calc(3/4*100vh)] overflow-hidden bg-black flex flex-col items-center md:pt-12 md:pb-12'>
       <div className='w-full md:w-4/5 flex flex-col md:flex-row-reverse justify-between items-center'>  
 
-        <div className='w-2/3 md:w-1/3 mt-4 flex flex-col items-center md:flex-row md:items-center md:justify-between animate-slideLft'>
+        <div className='w-2/3 md:w-1/3 mt-4 flex flex-col items-center md:flex-row md:items-center md:justify-between animate-slideLft transition-transform duration 100'>
           <img src={ProfilePic} alt='Profile Picture' className='w-5 rounded-md mb-4 md:mb-0' />
         </div>
 
