@@ -5,6 +5,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      borderWidth: {
+        '1': '1px', // Use '1' for 0.1rem
+      },
+      colors: {
+        backgroundColor: '#011627',
+      },
       transitionDuration: {
         '800': '800ms', 
         '100': '100ms',
@@ -15,7 +21,6 @@ module.exports = {
             transform: 'translateX(100px)',
             opacity: 0,
           },
-
           '100%': {
             transform: 'translateX(0px)',
             opacity: 1,
@@ -33,10 +38,20 @@ module.exports = {
             opacity: 1,
           },
         },
+        opacityTopSlide: {
+          '0%': {
+            opacity: 0,
+          },
+
+          '100%': {
+            opacity: 1,
+          }
+        }
       },
       animation: {
         slideLft: 'slideLft 2s ease',
-        slideRgt: 'slideRgt 2s ease'
+        slideRgt: 'slideRgt 2s ease',
+        opacityTopSlide: 'opacityTopSlide 2s ease',
       },
       width: {
         '5': '20rem',
