@@ -15,34 +15,35 @@
 
 import React, { useEffect, useRef } from "react";
 
-const words = ["code", "passion"];
+const words = ["code", "passion", "creation"];
 
 const About = () => {
-  const textRef = useRef(null);
+  // const textRef = useRef(null);
 
-  useEffect(() => {
-    const textToShow = textRef.current;
+  // useEffect(() => {
+  //   const textToShow = textRef.current;
 
-    if (textToShow) {
-      const observer = new IntersectionObserver(
-        (entries) => {
-          const entry = entries[0];
-          if (entry.isIntersecting) {
-            textToShow.classList.add("opacity-100", "translate-y-[-5rem]");
-          }
-        },
-        {
-          threshold: 1, // You can adjust the threshold as needed
-        }
-      );
+  //   if (textToShow) {
+  //     const observer = new IntersectionObserver(
+  //       (entries) => {
+  //         const entry = entries[0];
+  //         if (entry.isIntersecting) {
+  //           textToShow.classList.add("opacity-100", "translate-y-[-5rem]");
+  //         }
+  //       },
+  //       {
+  //         threshold: 1, // You can adjust the threshold as needed
+  //       }
+  //     );
 
-      observer.observe(textToShow);
+  //     observer.observe(textToShow);
 
-      return () => {
-        observer.disconnect(); // Clean up the observer when unmounting
-      };
-    }
-  }, []);
+  //     return () => {
+  //       observer.disconnect(); // Clean up the observer when unmounting
+  //     };
+  //   }
+  // }, []);
+
   useEffect(() => {
     const dynamicWords = document.getElementById("textDynamic");
 
@@ -61,13 +62,16 @@ const About = () => {
   }, []);
 
   return (
-    <div className="w-full flex h-20rem justify-end">
-         <p className="w-1/2 flex items-center text-[12rem]">&lt;<span id="textDynamic" className="text-[5rem]"></span>&gt;</p>
-      <p
-        ref={textRef}
-        className="w-2/6 opacity-0 transition-opacityTopSlide duration-800 ease-in transform translate-y-0 text-start mt-[20rem] mb-[4rem] mr-[4rem] text-lg">
-        Having studied Web Design, I am curently in process of expanding my knowledge in Web Development at BeCode. After creating some projects with <span className="font-semibold">HTML/CSS/JS</span>, I find myself passionate about the front-end side and would like to expand my skills during an internship. <span className="text-[2rem]">Let's connect!</span>
-      </p>
+    <div className="w-full bg-backgroundColor flex h-[40rem] xs:justify-center justify-end">
+        <div className="xs:hidden w-1/2 justify-center items-start">
+            <p className="text-white sm:block md:block w-fit text-[5rem]">&lt;<span id="textDynamic" className="text-[5vw]"></span>&gt;
+            </p>
+        </div>
+            <p 
+                className="w-1/2  text-white transition-opacityTopSlide duration-800 ease-in transform translate-y-0 text-center mt-[15rem] mb-[4rem] mr-[4rem] text-lg">
+                Having studied Web Design, I am curently in process of expanding my knowledge in Web Development at BeCode. After creating some projects with <span className="font-semibold">HTML/CSS/JS</span>, I find myself passionate about the front-end side and would like to expand my skills during an internship. <span className="text-[2rem]">Let's connect!</span>
+            </p>
+        
     </div>
   );
 };
