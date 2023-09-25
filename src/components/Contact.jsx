@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link } from 'react-scroll';
+
 
 const Contact = () => {
 
     return (
    
-    <div className='w-full h-[90vh] bg-backgroundColor flex justify-around pl-24 items-center'>
+    <div id='contact' className='w-full h-[90vh] bg-backgroundColor flex justify-around pl-24 items-center'>
         <form action="" className='w-1/2 pt-24 pb-4 flex-col'>
             <div className='w-full flex'>
                 <div className='w-1/2 h-fit flex flex-col mb-2'>
@@ -22,9 +24,10 @@ const Contact = () => {
                     <label htmlFor="subject" className='w-full h-fit text-white'>Subject</label>
                     
                     <select id='subject' type="text" className='w-[90%] h-[2rem] mb-2 border bg-transparent text-white pl-2' required >
-                        <option value="" className='text-black'>Starting a project</option>
-                        <option value="" className='text-black'>Maintenance of a website</option>
-                        <option value="" className='text-black'>Technical issue</option>
+                        <option value="default_option" disabled selected hidden></option>
+                        <option value="option2" className='text-black'>Starting a project</option>
+                        <option value="option3" className='text-black'>Maintenance of a website</option>
+                        <option value="option4" className='text-black'>Technical issue</option>
                     </select>
                 </div>
                 <div className='w-full h-fit'>

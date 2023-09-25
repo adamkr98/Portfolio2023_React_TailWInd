@@ -1,20 +1,5 @@
 import React, { useEffect } from 'react';import ProfilePic from '../Images/AdamKrynskiPhotoProfil.jpg';
-
-// const Hero = () => {
-//   return (
-//     <div className='w-full bg-black flex flex-col items-center'>
-//         <div className='flex justify-center mt-8 mb-8'>
-//             <img src={ProfilePic} alt='Profile Picture' className='w-39 h-40 rounded-full' />
-//         </div>
-
-//         <p className='w-1/2 text-white pb-4 flex justify-center text-center'>
-//             Hi I'm Adam and I'm a Junior Front End Developper / CSS Geek.
-//         </p>
-//     </div>
-//   )
-// }
-
-// export default Hero;
+import { Link } from 'react-scroll';
 
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
@@ -24,7 +9,9 @@ const Hero = () => {
     const profilePic = document.querySelector("img");
   
     profilePic.addEventListener("click", () => {
-      profilePic.style.transform = 'rotateY(180deg)';
+      profilePic.style.transform = 'rotate(360deg)';
+      
+      profilePic.style.transition = 'ease-in 1s';
     })
   }, []);
 

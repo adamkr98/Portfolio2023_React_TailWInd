@@ -1,4 +1,6 @@
 import React, { useEffect, useRef } from "react";
+import { Link } from 'react-scroll';
+
 
 const Projects = () => {
   const row1 = useRef(null);
@@ -35,7 +37,7 @@ const Projects = () => {
 
   return (
     <>
-      <div className='bg-backgroundColor w-full h-fit flex-col items-center justify-around'>
+      <div id="projects" className='bg-backgroundColor w-full h-fit flex-col items-center justify-around'>
 
         <div ref={row1} className='flex justify-around mb-12 opacity-0 transition-opacityTopSlide duration-500 ease-in'>
           <div className='w-[30rem] h-[20rem] bg-[#EAEAEB] rounded-md'></div>
