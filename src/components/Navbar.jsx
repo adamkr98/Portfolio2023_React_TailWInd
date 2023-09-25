@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <div className="h-20 w-full bg-white fixed top-0 z-10 text-black flex justify-between items-center">
+    <div className="h-20 w-full bg-white fixed top-0 z-10 border border-b-backgroundColor text-black flex justify-between items-center">
       {/* Left side */}
       <div className="w-1/4">
         <h1 className="text-xl font-semibold ml-4">Hello</h1>

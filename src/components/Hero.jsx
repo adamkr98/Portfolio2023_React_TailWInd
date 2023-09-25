@@ -1,5 +1,4 @@
-import React from 'react';
-import ProfilePic from '../Images/AdamKrynskiPhotoProfil.jpg';
+import React, { useEffect } from 'react';import ProfilePic from '../Images/AdamKrynskiPhotoProfil.jpg';
 
 // const Hero = () => {
 //   return (
@@ -20,12 +19,22 @@ import ProfilePic from '../Images/AdamKrynskiPhotoProfil.jpg';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Hero = () => {
+
+  useEffect(() => {
+    const profilePic = document.querySelector("img");
+  
+    profilePic.addEventListener("click", () => {
+      profilePic.style.transform = 'rotateY(180deg)';
+    })
+  }, []);
+
+
   return (
     <div className='overflowX w-full md:h-[105vh] overflow-hidden bg-white flex flex-col items-center md:pt-12 md:pb-12'>
       <div className='w-full md:w-4/5 flex flex-col md:flex-row-reverse justify-between items-center'>  
 
         <div className='w-2/3 md:w-1/3 mt-4 flex flex-col items-center md:flex-row md:items-center md:justify-between animate-slideLft transition-transform duration 100'>
-          <img src={ProfilePic} alt='Profile Picture' className='mt-12  w-5 rounded-[12rem] mb-4 md:mb-0' />
+          <img src={ProfilePic} alt='Profile Picture' className='mt-12 xs:w-5 xs:mt-24 md:w-5 rounded-[12rem] mb-4 md:mb-0' />
         </div>
 
         <div className='md:min-h-[400px] md:w-2/3 md:mt-20 md:flex-col md:items-center flex flex-col items-center justify-center animate-slideRgt'>

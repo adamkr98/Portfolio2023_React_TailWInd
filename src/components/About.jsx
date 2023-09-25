@@ -44,35 +44,39 @@ const About = () => {
   //   }
   // }, []);
 
-  useEffect(() => {
-    const dynamicWords = document.getElementById("textDynamic");
+  // useEffect(() => {
+  //   const dynamicWords = document.getElementById("textDynamic");
 
-    let index = 0;
+  //   let index = 0;
 
-    const interval = setInterval(() => {
-      dynamicWords.textContent = words[index];
-      index++;
-      if (index >= words.length) {
-        index = 0;
-      }
-    }, 2000);
+  //   const interval = setInterval(() => {
+  //     dynamicWords.textContent = words[index];
+  //     index++;
+  //     if (index >= words.length) {
+  //       index = 0;
+  //     }
+  //   }, 2000);
 
-    // Cleanup: Clear the interval when the component unmounts
-    return () => clearInterval(interval);
-  }, []);
+  //   // Cleanup: Clear the interval when the component unmounts
+  //   return () => clearInterval(interval);
+  // }, []);
 
   return (
-    <div className="w-full bg-backgroundColor flex h-[40rem] xs:justify-center justify-end">
-        <div className="xs:hidden w-1/2 justify-center items-start">
+      <div className="w-full bg-backgroundColor flex h-[40rem] xs:justify-center justify-center ">
+        {/* <div className="hidden w-1/2 justify-center items-start">
             <p className="text-white sm:block md:block w-fit text-[5rem]">&lt;<span id="textDynamic" className="text-[5vw]"></span>&gt;
             </p>
-        </div>
-            <p 
-                className="w-1/2  text-white transition-opacityTopSlide duration-800 ease-in transform translate-y-0 text-center mt-[15rem] mb-[4rem] mr-[4rem] text-lg">
-                Having studied Web Design, I am curently in process of expanding my knowledge in Web Development at BeCode. After creating some projects with <span className="font-semibold">HTML/CSS/JS</span>, I find myself passionate about the front-end side and would like to expand my skills during an internship. <span className="text-[2rem]">Let's connect!</span>
-            </p>
+        </div> */}
         
-    </div>
+             
+        <div className="w-full bg-backgroundColor flex h-[40rem] xs:justify-center justify-center items-center">
+          <div className="w-full flex justify-center items-center">
+            <p className="w-3/4 md:w-1/2 text-white transition-opacityTopSlide duration-800 ease-in transform translate-y-0 text-center text-lg">
+                        Having studied Web Design, I am curently in process of expanding my knowledge in Web Development at BeCode. After creating some projects with <span className="font-semibold">HTML/CSS/JS</span>, I find myself passionate about the front-end side and would like to expand my skills during an internship. <span className="text-[2rem]">Let's connect!</span>
+            </p>
+          </div>  
+        </div>
+      </div>
   );
 };
 

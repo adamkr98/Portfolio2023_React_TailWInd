@@ -38,15 +38,6 @@ module.exports = {
             opacity: 1,
           },
         },
-        opacityTopSlide: {
-          '0%': {
-            opacity: 0,
-          },
-
-          '100%': {
-            opacity: 1,
-          }
-        }
       },
       animation: {
         slideLft: 'slideLft 2s ease',
