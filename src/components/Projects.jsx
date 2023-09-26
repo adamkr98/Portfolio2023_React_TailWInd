@@ -35,21 +35,38 @@ const Projects = () => {
     };
   }, []);
 
+
   return (
     <>
-      <div id="projects" className='bg-backgroundColor w-full h-fit flex-col items-center justify-around'>
+      <div id="projects" className="w-full bg-backgroundColor flex-col items-center justify-around">
 
-        <div ref={row1} className='flex justify-around mb-12 opacity-0 transition-opacityTopSlide duration-500 ease-in'>
-          <div className='w-[30rem] h-[20rem] bg-[#EAEAEB] rounded-md'></div>
-          <div className='w-[30rem] h-[20rem] bg-[#EAEAEB] rounded-md'></div>
+      {/* xs:bg-pink-600 sm:bg-red-600 md:bg-yellow-500 xl:bg-orange-600 */}
+
+        <div ref={row1} className="w-full xs:w-full xs:flex-col xs:justify-center xs:items-center sm:flex sm:justify-center md:flex-row md:justify-around mb-12 opacity-0 transition-opacityTopSlide duration-500 ease-in">
+
+          <div className="mb-12 xs:mb-8 xs:w-[90%] xs:h-[20rem] xs:mx-auto sm:mb-8 sm:w-[80%] sm:mx-auto md:w-[45%] bg-[#EAEAEB] rounded-md md:border"></div>
+          
+          <div className="xs:mb-0 xs:w-[90%] xs:h-[20rem] xs:mx-auto sm:mb-8 sm:w-[80%] sm:mx-auto md:w-[45%] bg-[#EAEAEB] rounded-md"></div>
+
+          
+
         </div>
 
-        <div ref={row2} className='flex justify-around mt-20 opacity-0 transition-opacityTopSlide duration-500 ease-in'>
-          <div className='w-[30rem] h-[20rem] bg-[#EAEAEB] rounded-md'></div>
-          <div className='w-[30rem] h-[20rem] bg-[#EAEAEB] rounded-md'></div>
+        {/* xs:bg-pink-600 sm:bg-red-600 md:bg-yellow-500 xl:bg-orange-600 */}
+
+        <div ref={row2} className="w-full xs:w-full xs:flex-col xs:justify-center xs:items-center sm:flex sm:justify-center md:flex-row md:justify-around opacity-0 transition-opacityTopSlide duration-500 ease-in">
+
+          <div className="mb-12 xs:mb-8 xs:w-[90%] xs:h-[20rem] xs:mx-auto sm:mb-8 sm:w-[80%] sm:mx-auto md:w-[45%] bg-[#EAEAEB] rounded-md md:border"></div>
+          
+          <div className="mb-12 xs:mb-0 xs:w-[90%] xs:h-[20rem] xs:mx-auto sm:mb-8 sm:w-[80%] sm:mx-auto md:w-[45%] bg-[#EAEAEB] rounded-md"></div>
+
         </div>
 
-      </div>
+
+
+        
+</div>
+
     </>
   );
 };

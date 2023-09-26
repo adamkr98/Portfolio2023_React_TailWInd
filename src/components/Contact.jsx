@@ -1,21 +1,45 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Link } from 'react-scroll';
+import emailjs from '@emailjs/browser';
 
+
+
+
+const serviceID = process.env.REACT_APP_SERVICE_ID;
+const templateID = process.env.REACT_APP_TEMPLATE_ID;
+const publicKEY = process.env.REACT_APP_PUBLIC_KEY;
 
 const Contact = () => {
+
+    const form = useRef();
+  
+    const sendEmail = (e) => {
+      e.preventDefault();
+
+        console.log("Service ID:", serviceID);
+        console.log("Template ID:", templateID);
+        console.log("Public Key:", publicKEY);
+  
+      emailjs.sendForm(serviceID, templateID, form.current, publicKEY)
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
 
     return (
    
     <div id='contact' className='w-full h-[90vh] bg-backgroundColor flex justify-around pl-24 items-center'>
-        <form action="" className='w-1/2 pt-24 pb-4 flex-col'>
+        <form ref={form} onSubmit={sendEmail} className='w-1/2 pt-24 pb-4 flex-col'>
             <div className='w-full flex'>
                 <div className='w-1/2 h-fit flex flex-col mb-2'>
                     <label htmlFor="name" className='w-full h-fit text-white'>Name</label>
-                    <input id='name' type="text" className='w-[90%] h-[2rem] border bg-transparent text-white pl-2' required />
+                    <input id='name' type="text" placeholder='Insert your name' className='w-[90%] h-[2rem] border bg-transparent text-white pl-2' required />
                 </div>
                 <div className='w-1/2 h-fit flex flex-col mb-4'>
                     <label htmlFor="email" className='w-full h-fit text-white'>Email</label>
-                    <input id='email' type="text" className='w-[90%] h-[2rem] border bg-transparent text-white pl-2' required />
+                    <input id='email' type="text" placeholder='Insert your email addresse' className='w-[90%] h-[2rem] border bg-transparent text-white pl-2' required />
                 </div>
             </div>
 
@@ -32,11 +56,11 @@ const Contact = () => {
                 </div>
                 <div className='w-full h-fit'>
                     <label htmlFor="message" className='text-white'>Message</label>
-                    <textarea type="text" id='message' className='w-[95%] h-[6rem] mb-4 border bg-transparent text-white pl-2'required />
+                    <textarea type="text" id='message' placeholder='Write a message' className='w-[95%] h-[6rem] mb-4 border bg-transparent text-white pl-2 pt-2'required />
                 </div>
             </div>
            <div>
-            <button className='w-fit h-fit pl-3 pr-3 pt-2 pb-2 rounded-md border border-white text-white hover:bg-white hover:text-backgroundColor'>Submit</button>
+            <button type="submit" className='w-fit h-fit pl-3 pr-3 pt-2 pb-2 rounded-md border border-white text-white hover:bg-white hover:text-backgroundColor'>Submit</button>
            </div>
         </form>
 
@@ -51,29 +75,3 @@ const Contact = () => {
     )
 }
 export default Contact;
-//     <div className='w-full h-[90vh] pt-48 bg-backgroundColor border border-white flex justify-center'>
-// <form className='w-2/4 h-[25rem] flex flex-col items-center justify-center border border-red' action="" method="post">
-              
-//               <div className='w-[90%] h-fit flex '>
-//                   <div className="w-[80%] mb-2 flex flex-col justify-start"> 
-//                       <label htmlFor="name" className='text-white'>Name</label>
-//                       <input type="text" id="name" name="name" className='w-[90%] h-[2rem] rounded-md border border-backgroundColor mb-2'/>
-//                   </div>
-//                   <div className="w-[80%] mb-2 flex-col justify-start"> 
-//                       <label htmlFor="email" className='text-white'>Email</label>
-//                       <input type="text" id="email" name="email" className='w-[90%] rounded-md h-[2rem] border border-backgroundColor'/>
-//                   </div>
-//               </div>
-//               <div className='w-[90%] mb-2 flex-col items-start'>
-//                   <label htmlFor="subject" className='text-white flex'>Subject</label>
-//                   <select type="text" className='w-[50%] h-[2rem] text-white rounded-md flex'>
-//                       <option value="">Creating a new web page</option>
-//                   </select>
-//               </div>
-//               <div className="w-[90%] mb-24 flex flex-col justify-start border border-white"> 
-//                   <label htmlFor="message" className='text-white'>Message</label>
-//                   <textarea type="text" id="email" name="email" className='w-[60%] h-[6rem] rounded-md border border-backgroundColor'/>
-//               </div>
-//           </form>
-// </div>
-
