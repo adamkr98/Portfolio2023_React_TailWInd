@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Portfolio2023_React_TailWInd/static/css/main.1004d8f2.css",
-    "main.js": "/Portfolio2023_React_TailWInd/static/js/main.08a1485c.js",
+    "main.css": "/Portfolio2023_React_TailWInd/static/css/main.52d0bd7d.css",
+    "main.js": "/Portfolio2023_React_TailWInd/static/js/main.5a8e8859.js",
     "static/media/AdamKrynskiPhotoProfil.jpg": "/Portfolio2023_React_TailWInd/static/media/AdamKrynskiPhotoProfil.3841e77c1633fbf6e5fa.jpg",
     "index.html": "/Portfolio2023_React_TailWInd/index.html",
-    "main.1004d8f2.css.map": "/Portfolio2023_React_TailWInd/static/css/main.1004d8f2.css.map",
-    "main.08a1485c.js.map": "/Portfolio2023_React_TailWInd/static/js/main.08a1485c.js.map"
+    "main.52d0bd7d.css.map": "/Portfolio2023_React_TailWInd/static/css/main.52d0bd7d.css.map",
+    "main.5a8e8859.js.map": "/Portfolio2023_React_TailWInd/static/js/main.5a8e8859.js.map"
   },
   "entrypoints": [
-    "static/css/main.1004d8f2.css",
-    "static/js/main.08a1485c.js"
+    "static/css/main.52d0bd7d.css",
+    "static/js/main.5a8e8859.js"
   ]
 }
