@@ -35,8 +35,9 @@ const Contact = () => {
 
     return (
    
-    <div id='contact' className='xs:border xs:border-4 sm:border sm:border-4 md:border md:border-4 xs:w-full sm:w-full md:w-full lg:w-full xl:w-full  h-[90vh] xl:bg-backgroundColor lg:bg-yellow-400 md:bg-red-700 sm:bg-green-900 xs:bg-violet-600 xs:flex xs:flex-col-reverse sm:flex sm:flex-col-reverse md:flex md:flex-row lg:flex lg:flex-row xl:flex xl:flex-row justify-around pl-24 items-center'>
-        <form ref={form} onSubmit={sendEmail} className='w-1/2 pt-24 pb-4 flex-col'>
+    <div id='contact' className='sm:border sm:border-4 md:border md:border-4 xs:w-full sm:w-full md:w-full lg:w-full xl:w-full  h-[90vh] xl:bg-backgroundColor lg:bg-yellow-400 md:bg-red-700 sm:bg-green-900 xs:bg-violet-600 xs:flex xs:flex-col xs:flex-col-reverse xs:items-center xs:justify-center sm:flex sm:flex-col-reverse md:flex md:flex-row lg:flex lg:flex-row xl:flex xl:flex-row justify-around'>
+
+        <form ref={form} onSubmit={sendEmail} className='xs:w-[90%] md:w-1/2 md:pt-24 md:pb-4 md:flex-col'>
             <div className='w-full flex'>
                 <div className='w-1/2 h-fit flex flex-col mb-2'>
                     <label htmlFor="name" className='w-full h-fit text-white'>Name</label>
@@ -69,9 +70,9 @@ const Contact = () => {
            </div>
         </form>
 
-        <div className='sm:mt-12 xs:w-2/3 sm:w-2/3 md:w-1/3 lg:w-1/3 xl:w-1/3 h-[20rem] flex flex-col justify-start items-center border'>
+        <div className='xs:w-[90%] xs:h-fit xs:flex-col xs:items-center xs:text-center sm:mt-12 sm:w-2/3 md:w-1/3 lg:w-1/3 xl:w-1/3 h-[20rem] flex flex-col justify-start items-center'>
             <p className='text-white text-[2rem]'>Contact Me</p>
-            <p className='text-white'>
+            <p className='text-white xs:w-full xs:mb-4'>
             I'm always here to connect and answer any questions you may have. Whether you want to discuss a potential project, inquire about my services, or just say hello, I'd love to hear from you.
             </p>
         </div>
