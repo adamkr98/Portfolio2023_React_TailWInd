@@ -35,7 +35,7 @@ const Contact = () => {
 
     return (
    
-    <div id='contact' className='sm:border sm:border-4 md:border md:border-4 xs:w-full sm:w-full md:w-full lg:w-full xl:w-full  h-[90vh] xl:bg-backgroundColor lg:bg-yellow-400 md:bg-red-700 sm:bg-green-900 xs:bg-violet-600 xs:flex xs:flex-col xs:flex-col-reverse xs:items-center xs:justify-center sm:flex sm:flex-col-reverse md:flex md:flex-row lg:flex lg:flex-row xl:flex xl:flex-row justify-around'>
+    <div id='contact' className='xs:w-full sm:w-full md:w-full lg:w-full xl:w-full  h-[90vh] xl:bg-backgroundColor lg:bg-yellow-400 md:bg-red-700 sm:bg-green-900 xs:bg-violet-600 xs:flex xs:flex-col xs:flex-col-reverse xs:items-center xs:justify-center sm:flex sm:flex-col-reverse md:flex md:flex-row lg:flex lg:flex-row xl:flex xl:flex-row justify-around'>
 
         <form ref={form} onSubmit={sendEmail} className='xs:w-[90%] md:w-1/2 md:pt-24 md:pb-4 md:flex-col'>
             <div className='w-full flex'>
