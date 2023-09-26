@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Portfolio2023_React_TailWInd/static/css/main.89f805eb.css",
-    "main.js": "/Portfolio2023_React_TailWInd/static/js/main.8ab09c71.js",
+    "main.js": "/Portfolio2023_React_TailWInd/static/js/main.02e46962.js",
     "static/media/AdamKrynskiPhotoProfil.jpg": "/Portfolio2023_React_TailWInd/static/media/AdamKrynskiPhotoProfil.3841e77c1633fbf6e5fa.jpg",
     "index.html": "/Portfolio2023_React_TailWInd/index.html",
     "main.89f805eb.css.map": "/Portfolio2023_React_TailWInd/static/css/main.89f805eb.css.map",
-    "main.8ab09c71.js.map": "/Portfolio2023_React_TailWInd/static/js/main.8ab09c71.js.map"
+    "main.02e46962.js.map": "/Portfolio2023_React_TailWInd/static/js/main.02e46962.js.map"
   },
   "entrypoints": [
     "static/css/main.89f805eb.css",
-    "static/js/main.8ab09c71.js"
+    "static/js/main.02e46962.js"
   ]
 }
