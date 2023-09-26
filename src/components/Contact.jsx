@@ -28,6 +28,7 @@ const Contact = () => {
       emailjs.sendForm(serviceID, templateID, form.current, publicKEY, { subject })
         .then((result) => {
             console.log(result.text);
+            form.current.reset();
         }, (error) => {
             console.log(error.text);
         });
