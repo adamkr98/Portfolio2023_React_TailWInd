@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/adamkrynski.dev/static/css/main.89f805eb.css",
+    "main.js": "/adamkrynski.dev/static/js/main.dbd71865.js",
+    "static/media/AdamKrynskiPhotoProfil.jpg": "/adamkrynski.dev/static/media/AdamKrynskiPhotoProfil.3841e77c1633fbf6e5fa.jpg",
+    "index.html": "/adamkrynski.dev/index.html",
+    "main.89f805eb.css.map": "/adamkrynski.dev/static/css/main.89f805eb.css.map",
+    "main.dbd71865.js.map": "/adamkrynski.dev/static/js/main.dbd71865.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.89f805eb.css",
+    "static/js/main.dbd71865.js"
+  ]
+}
