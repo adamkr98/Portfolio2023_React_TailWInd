@@ -92,7 +92,7 @@ const Contact = () => {
       }
       
 
-        <div className='xs:w-[90%] xs:h-fit xs:flex-col xs:items-center xs:text-center sm:mt-12 sm:w-2/3 md:w-1/3 lg:w-1/3 xl:w-1/3 h-[20rem] flex flex-col justify-start items-center'>
+        <div className='xs:w-[90%] xs:h-fit xs:flex-col xs:items-center xs:text-center sm:mt-12 sm:w-2/3 md:mb-[12.5rem] md:text-center md:w-1/3 lg:w-1/3 xl:w-1/3 h-[20rem] flex flex-col justify-start items-center'>
             <p className='text-white text-[2rem]'>Contact Me</p>
             <p className='text-white xs:w-full xs:mb-4'>
             I'm always here to connect and answer any questions you may have. Whether you want to discuss a potential project, inquire about my services, or just say hello, I'd love to hear from you.

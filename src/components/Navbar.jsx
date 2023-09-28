@@ -6,7 +6,7 @@ const Navbar = () => {
     <div className="h-20 w-full bg-white fixed top-0 z-10 border border-b-backgroundColor text-black flex justify-between items-center">
       {/* Left side */}
       <div className="w-1/4">
-        <li className="list-none text-xl font-semibold ml-4"><Link to='main' smooth={true} duration={1000} offset={-46 * 15}>&lt;/&gt;</Link></li>
+        <li className="hover:cursor-pointer list-none text-xl font-semibold ml-4"><Link to='main' smooth={true} duration={1000} offset={-46 * 15}>&lt;/&gt;</Link></li>
       </div>
 
       {/* Right side */}
