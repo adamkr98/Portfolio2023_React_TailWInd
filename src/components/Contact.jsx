@@ -24,8 +24,9 @@ const Contact = () => {
       emailjs.sendForm(serviceID, templateID, form.current, publicKEY, { subject })
         .then((result) => {
             console.log(result.text);
+            alert("okokoko");
             form.current.reset();
-            alert("okokoko")
+            
             
         }, (error) => {
             console.log(error.text);
