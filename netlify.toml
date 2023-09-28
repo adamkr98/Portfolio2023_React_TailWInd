@@ -3,6 +3,6 @@
   publish = "build"
 
 [build.environment]
-    process.env.REACT_APP_SERVICE_ID=service_i7uh7ca;
-    process.env.REACT_APP_TEMPLATE_ID=template_qfv8xbd;
-    process.env.REACT_APP_PUBLIC_KEY=i0NgQUtfEyAH4f3gH;
+    REACT_APP_SERVICE_ID=service_i7uh7ca;
+    REACT_APP_TEMPLATE_ID=template_qfv8xbd;
+    REACT_APP_PUBLIC_KEY=i0NgQUtfEyAH4f3gH;
