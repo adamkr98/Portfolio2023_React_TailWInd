@@ -23,7 +23,9 @@ const Contact = () => {
   
       emailjs.sendForm(serviceID, templateID, form.current, publicKEY, { subject })
         .then((result) => {
+            console.log("Sent successfully");
             console.log(result.text);
+
             // const messageContainer = document.createElement('div');
             //     messageContainer.style = `
             //         background-color: white;
