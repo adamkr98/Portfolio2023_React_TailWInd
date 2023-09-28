@@ -14,7 +14,7 @@ const Projects = () => {
     const handleIntersection = (entries, observer) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("opacity-100", "translate-y-[-10rem]");
+          entry.target.classList.add("opacity-100", "translate-y-[-3rem]");
           observer.unobserve(entry.target);
         }
       });
@@ -44,7 +44,11 @@ const Projects = () => {
 
         <div ref={row1} className="w-full xs:w-full xs:flex-col xs:justify-center xs:items-center sm:flex sm:justify-center md:flex-row md:justify-around mb-12 opacity-0 transition-opacityTopSlide duration-500 ease-in">
 
-          <div className="mb-12 xs:mb-8 xs:w-[90%] xs:h-[20rem] xs:mx-auto sm:mb-8 sm:w-[80%] sm:mx-auto md:w-[45%] bg-[#EAEAEB] rounded-md md:border"></div>
+          <div className="mb-12 xs:mb-8 xs:w-[90%] xs:h-[20rem] xs:mx-auto sm:mb-8 sm:w-[80%] sm:mx-auto md:w-[45%] bg-[#EAEAEB] rounded-md md:border">
+            <div>
+              
+            </div>
+          </div>
           
           <div className="xs:mb-0 xs:w-[90%] xs:h-[20rem] xs:mx-auto sm:mb-8 sm:w-[80%] sm:mx-auto md:w-[45%] bg-[#EAEAEB] rounded-md"></div>
 

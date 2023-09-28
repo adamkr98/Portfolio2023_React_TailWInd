@@ -64,7 +64,7 @@ const About = () => {
   // }, []);
 
   return (
-      <div className="w-full bg-backgroundColor flex h-[40rem] xs:justify-center justify-center ">
+      <div className="w-full flex h-[40rem] xs:justify-center justify-center ">
         {/* <div className="hidden w-1/2 justify-center items-start">
             <p className="text-white sm:block md:block w-fit text-[5rem]">&lt;<span id="textDynamic" className="text-[5vw]"></span>&gt;
             </p>
@@ -73,7 +73,7 @@ const About = () => {
              
         <div id="about" className="w-full bg-backgroundColor flex h-[40rem] xs:justify-center justify-center items-center">
           <div className="w-full flex justify-center items-center">
-            <p className="w-3/4 md:w-1/2 text-white transition-opacityTopSlide duration-800 ease-in transform translate-y-0 text-center text-lg">
+            <p className="w-3/4 md:w-1/2 text-white transition-opacityTopSlide duration-800 ease-in transform translate-y-0 text-center text-lg xs:pb-12">
                         Having studied Web Design, I am curently in process of expanding my knowledge in Web Development at BeCode. After creating some projects with <span className="font-semibold">HTML/CSS/JS</span>, I find myself passionate about the front-end side and would like to expand my skills during an internship. <span className="text-[2rem]">Let's connect!</span>
             </p>
           </div>  

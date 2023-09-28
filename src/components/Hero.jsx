@@ -17,7 +17,7 @@ const Hero = () => {
 
 
   return (
-    <div className='overflowX w-full md:h-[105vh] overflow-hidden bg-white flex flex-col items-center md:pt-12 md:pb-12'>
+    <div id="main" className='overflowX w-full md:h-[105vh] overflow-hidden bg-white flex flex-col items-center md:pt-12 md:pb-12'>
       <div className='w-full md:w-4/5 flex flex-col md:flex-row-reverse justify-between items-center'>  
 
         <div className='w-2/3 md:w-1/3 mt-4 flex flex-col items-center md:flex-row md:items-center md:justify-between animate-slideLft transition-transform duration 100'>

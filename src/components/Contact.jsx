@@ -25,8 +25,30 @@ const Contact = () => {
         .then((result) => {
             console.log(result.text);
             form.current.reset();
+            
         }, (error) => {
             console.log(error.text);
+            alert("okokoko")
+            // const messageContainer = document.createElement('div');
+            //     messageContainer.style = `
+            //         background-color: white;
+            //         width: 10rem;
+            //         height: 4rem;
+
+            //         position: absolute;
+            //         bottom: 5rem;
+            //     `
+            // const message200 = document.createElement('div');
+            //     message200.style = `
+            //     width: 100%;    
+            //     height: 1rem;
+
+            //     color: black;
+            //     font-size: 1.5rem;
+            //     `
+            // let body = document.querySelector('body');
+            // body.append(messageContainer);
+            // messageContainer.append(message200);
         });
     };
 
