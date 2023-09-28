@@ -25,10 +25,10 @@ const Contact = () => {
         .then((result) => {
             console.log(result.text);
             form.current.reset();
+            alert("okokoko")
             
         }, (error) => {
             console.log(error.text);
-            alert("okokoko")
             // const messageContainer = document.createElement('div');
             //     messageContainer.style = `
             //         background-color: white;
