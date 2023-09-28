@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import emailjs from '@emailjs/browser';
 
@@ -9,9 +9,12 @@ const serviceID = process.env.REACT_APP_SERVICE_ID;
 const templateID = process.env.REACT_APP_TEMPLATE_ID;
 const publicKEY = process.env.REACT_APP_PUBLIC_KEY;
 
+
 const Contact = () => {
 
+    const [isFormSubmitted, setIsFormSubmitted] = useState(false);
     const form = useRef();
+    const succes = useRef();
   
     const sendEmail = (e) => {
       e.preventDefault();
@@ -23,34 +26,9 @@ const Contact = () => {
   
       emailjs.sendForm(serviceID, templateID, form.current, publicKEY, { subject })
         .then((result) => {
-            console.log("Sent successfully");
             console.log(result.text);
-
-            // const messageContainer = document.createElement('div');
-            //     messageContainer.style = `
-            //         background-color: white;
-            //         width: 10rem;
-            //         height: 4rem;
-
-            //         position: absolute;
-            //         bottom: 5rem;
-            //     `
-            // const message200 = document.createElement('div');
-            //     message200.style = `
-            //     width: 100%;    
-            //     height: 1rem;
-
-            //     color: black;
-            //     font-size: 1.5rem;
-            //     `
-            // let body = document.querySelector('body');
-            // body.append(messageContainer);
-            // messageContainer.append(message200);
-            setTimeout(() => {
-                console.log("Sent successfully");
-              }, 3000);
             form.current.reset();
-            
+            setIsFormSubmitted(true);
             
         }, (error) => {
             console.log(error.text);
@@ -58,9 +36,20 @@ const Contact = () => {
         });
     };
 
+    useEffect(() => {
+        if (isFormSubmitted) {
+          const timer = setTimeout(() => {
+            succes.current.remove();
+          }, 6000);
+    
+          // Clear the timer if the component unmounts or if isFormSubmitted changes
+          return () => clearTimeout(timer);
+        }
+      }, [isFormSubmitted]);
+
     return (
    
-    <div id='contact' className='xs:w-full sm:w-full md:w-full lg:w-full xl:w-full  h-[90vh] xs:bg-backgroundColor xs:flex xs:flex-col xs:flex-col-reverse xs:items-center xs:justify-center sm:flex sm:flex-col-reverse md:flex md:flex-row lg:flex lg:flex-row xl:flex xl:flex-row justify-around'>
+    <div id='contact' className='xs:relative xs:w-full sm:w-full md:w-full lg:w-full xl:w-full  h-[90vh] xs:bg-backgroundColor xs:flex xs:flex-col xs:flex-col-reverse xs:items-center xs:justify-center sm:flex sm:flex-col-reverse md:flex md:flex-row lg:flex lg:flex-row xl:flex xl:flex-row justify-around'>
 
         <form ref={form} onSubmit={sendEmail} className='xs:w-[90%] md:w-1/2 md:pt-24 md:pb-4 md:flex-col'>
             <div className='w-full flex'>
@@ -94,6 +83,14 @@ const Contact = () => {
             <button type="submit" value="send" className='w-fit h-fit pl-3 pr-3 pt-2 pb-2 rounded-md border border-white text-white hover:bg-white hover:text-backgroundColor'>Submit</button>
            </div>
         </form>
+
+        {isFormSubmitted && (
+        <p ref={succes} className="xs:p-4 xs:absolute xs:bottom xs:bottom-8 xs:right-4 xs:text-white">
+        Thank you for your submission!
+      </p>
+        )
+      }
+      
 
         <div className='xs:w-[90%] xs:h-fit xs:flex-col xs:items-center xs:text-center sm:mt-12 sm:w-2/3 md:w-1/3 lg:w-1/3 xl:w-1/3 h-[20rem] flex flex-col justify-start items-center'>
             <p className='text-white text-[2rem]'>Contact Me</p>
