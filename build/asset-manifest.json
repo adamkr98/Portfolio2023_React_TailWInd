@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.5b093e25.css",
-    "main.js": "/static/js/main.cad0e414.js",
+    "main.js": "/static/js/main.889c11bf.js",
     "static/media/AdamKrynskiPhotoProfil.jpg": "/static/media/AdamKrynskiPhotoProfil.3841e77c1633fbf6e5fa.jpg",
     "index.html": "/index.html",
     "main.5b093e25.css.map": "/static/css/main.5b093e25.css.map",
-    "main.cad0e414.js.map": "/static/js/main.cad0e414.js.map"
+    "main.889c11bf.js.map": "/static/js/main.889c11bf.js.map"
   },
   "entrypoints": [
     "static/css/main.5b093e25.css",
-    "static/js/main.cad0e414.js"
+    "static/js/main.889c11bf.js"
   ]
 }
