@@ -20,10 +20,6 @@ const Contact = () => {
         const email = e.target.user_email.value;
         const subject = e.target.subject.value;
         const message = e.target.message.value;
-
-        console.log("Service ID:", serviceID);
-        console.log("Template ID:", templateID);
-        console.log("Public Key:", publicKEY);
   
       emailjs.sendForm(serviceID, templateID, form.current, publicKEY, { subject })
         .then((result) => {
