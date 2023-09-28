@@ -44,7 +44,9 @@ const Contact = () => {
             // let body = document.querySelector('body');
             // body.append(messageContainer);
             // messageContainer.append(message200);
-            console.log("doqodkzoqkod");
+            setTimeout(() => {
+                console.log("Sent successfully");
+              }, 3000);
             form.current.reset();
             
             
