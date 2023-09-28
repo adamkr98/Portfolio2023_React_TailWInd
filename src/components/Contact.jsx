@@ -24,26 +24,27 @@ const Contact = () => {
       emailjs.sendForm(serviceID, templateID, form.current, publicKEY, { subject })
         .then((result) => {
             console.log(result.text);
-            const messageContainer = document.createElement('div');
-                messageContainer.style = `
-                    background-color: white;
-                    width: 10rem;
-                    height: 4rem;
+            // const messageContainer = document.createElement('div');
+            //     messageContainer.style = `
+            //         background-color: white;
+            //         width: 10rem;
+            //         height: 4rem;
 
-                    position: absolute;
-                    bottom: 5rem;
-                `
-            const message200 = document.createElement('div');
-                message200.style = `
-                width: 100%;    
-                height: 1rem;
+            //         position: absolute;
+            //         bottom: 5rem;
+            //     `
+            // const message200 = document.createElement('div');
+            //     message200.style = `
+            //     width: 100%;    
+            //     height: 1rem;
 
-                color: black;
-                font-size: 1.5rem;
-                `
-            let body = document.querySelector('body');
-            body.append(messageContainer);
-            messageContainer.append(message200);
+            //     color: black;
+            //     font-size: 1.5rem;
+            //     `
+            // let body = document.querySelector('body');
+            // body.append(messageContainer);
+            // messageContainer.append(message200);
+            console.log("doqodkzoqkod");
             form.current.reset();
             
             
