@@ -42,16 +42,16 @@ const Contact = () => {
             succes.current.remove();
           }, 6000);
     
-          // Clear the timer if the component unmounts or if isFormSubmitted changes
+         
           return () => clearTimeout(timer);
         }
       }, [isFormSubmitted]);
 
     return (
    
-    <div id='contact' className='xs:relative xs:w-full sm:w-full md:w-full lg:w-full xl:w-full  h-[90vh] xs:bg-backgroundColor xs:flex xs:flex-col xs:flex-col-reverse xs:items-center xs:justify-center sm:flex sm:flex-col-reverse md:flex md:flex-row lg:flex lg:flex-row xl:flex xl:flex-row justify-around'>
+    <div id='contact' className='xs:w-full sm:w-full lg:w-full xl:w-full h-[90vh] xs:bg-red xs:flex xs:flex-col xs:flex-col-reverse xs:items-center xs:justify-center sm:flex sm:flex-col-reverse md:w-full md:flex-row md:justify-around md:items-center lg:flex lg:flex-row xl:flex xl:flex-row bg-backgroundColor'>
 
-        <form ref={form} onSubmit={sendEmail} className='xs:w-[90%] md:w-1/2 md:pt-24 md:pb-4 md:flex-col'>
+        <form ref={form} onSubmit={sendEmail} className='xs:w-[90%] md:w-[45%] md:pt-24 md:pb-4 md:flex-col xs:mb-8'>
             <div className='w-full flex'>
                 <div className='w-1/2 h-fit flex flex-col mb-2'>
                     <label htmlFor="name" className='w-full h-fit text-white'>Name</label>
@@ -59,7 +59,7 @@ const Contact = () => {
                 </div>
                 <div className='w-1/2 h-fit flex flex-col mb-4'>
                     <label htmlFor="email" className='w-full h-fit text-white'>Email</label>
-                    <input id='email' name="user_email" type="text" placeholder='Insert your email addresse' className='w-[90%] h-[2rem] border bg-transparent text-white pl-2' required />
+                    <input id='email' name="user_email" type="email" placeholder='Insert your email addresse' className='w-[90%] h-[2rem] border bg-transparent text-white pl-2' required />
                 </div>
             </div>
 
@@ -74,10 +74,12 @@ const Contact = () => {
                         <option value="Technical_issue" className='text-black'>Technical issue</option>
                     </select>
                 </div>
+
                 <div className='w-full h-fit'>
                     <label htmlFor="message" className='text-white'>Message</label>
                     <textarea type="text" name="message" id='message' placeholder='Write a message' className='w-[95%] h-[6rem] mb-4 border bg-transparent text-white pl-2 pt-2'required />
                 </div>
+
             </div>
            <div>
             <button type="submit" value="send" className='w-fit h-fit pl-3 pr-3 pt-2 pb-2 rounded-md border border-white text-white hover:bg-white hover:text-backgroundColor'>Submit</button>
@@ -91,13 +93,12 @@ const Contact = () => {
         )
       }
       
-
-        <div className='xs:w-[90%] xs:h-fit xs:flex-col xs:items-center xs:text-center sm:mt-12 sm:w-2/3 md:mb-[12.5rem] md:text-center md:w-1/3 lg:w-1/3 xl:w-1/3 h-[20rem] flex flex-col justify-start items-center'>
-            <p className='text-white text-[2rem]'>Contact Me</p>
-            <p className='text-white xs:w-full xs:mb-4'>
-            I'm always here to connect and answer any questions you may have. Whether you want to discuss a potential project, inquire about my services, or just say hello, I'd love to hear from you.
-            </p>
-        </div>
+      <div className=' xs:w-[90%] xs:h-[20rem] xs:flex-col xs:items-center xs:justify-center xs:text-center sm:mt-12 sm:w-2/3 md:mb-[20.5rem] md:w-[45%] lg:w-1/3 xl:w-1/3 flex justify-center items-center'>
+    <p className='text-white text-end md:w-full md:h-[10rem] md:text-[3rem] xs:text-center'>
+      Have a question, an idea, or a project you'd like to discuss? Feel free to reach out!
+    </p>
+  </div>
+      
         
     </div>
     )

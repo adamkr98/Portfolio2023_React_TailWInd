@@ -29,7 +29,7 @@ module.exports = {
 
         slideRgt: {
           '0%': {
-            transform: 'translateX(-100px)',
+            transform: 'translateX(-200px)',
             opacity: 0,
           },
 
@@ -45,7 +45,7 @@ module.exports = {
         opacityTopSlide: 'opacityTopSlide 2s ease',
       },
       width: {
-        '5': '20rem',
+        '5': '30rem',
       },
       screens: {
         'xs': '340px',
