@@ -15,7 +15,7 @@ const Projects = () => {
     const handleIntersection = (entries, observer) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("opacity-100", "translate-y-[-3rem]");
+          entry.target.classList.add("opacity-100", "translate-y-[-10rem]");
           observer.unobserve(entry.target);
         }
       });
