@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { Link } from 'react-scroll';
+import project1 from '../Images/todoList.jpg';
 
 
 const Projects = () => {
@@ -44,13 +45,14 @@ const Projects = () => {
 
         <div ref={row1} className="w-full xs:w-full xs:flex-col xs:justify-center xs:items-center sm:flex sm:justify-center md:flex-row md:justify-around mb-12 opacity-0 transition-opacityTopSlide duration-500 ease-in">
 
-          <div className="mb-12 xs:mb-8 xs:w-[90%] xs:h-[20rem] xs:mx-auto sm:mb-8 sm:w-[80%] sm:mx-auto md:w-[45%] bg-[#EAEAEB] rounded-md md:border">
-            <div>
-              
-            </div>
-          </div>
+        <div className="mb-12 xs:mb-8 xs:w-[90%] xs:h-[20rem] xs:mx-auto sm:mb-8 sm:w-[80%] sm:mx-auto md:w-[45%] bg-[#EAEAEB] rounded-md md:border overflow-hidden md:w-[40%] md:h-fit">
+          <img src={project1} alt='Profile Picture' className="xs:w-full xs:h-auto"></img>
+        </div>
+
           
-          <div className="xs:mb-0 xs:w-[90%] xs:h-[20rem] xs:mx-auto sm:mb-8 sm:w-[80%] sm:mx-auto md:w-[45%] bg-[#EAEAEB] rounded-md"></div>
+        <div className="xs:mb-0 xs:w-[90%] xs:h-[20rem] xs:mx-auto sm:mb-8 sm:w-[80%] sm:mx-auto md:w-[45%] bg-[#EAEAEB] rounded-md overflow-hidden md:w-[40%] md:h-fit">
+          <img src={project1} alt='Profile Picture' className="xs:w-full xs:h-auto"></img>
+        </div>
 
           
 
@@ -60,9 +62,13 @@ const Projects = () => {
 
         <div ref={row2} className="w-full xs:w-full xs:flex-col xs:justify-center xs:items-center sm:flex sm:justify-center md:flex-row md:justify-around opacity-0 transition-opacityTopSlide duration-500 ease-in">
 
-          <div className="mb-12 xs:mb-8 xs:w-[90%] xs:h-[20rem] xs:mx-auto sm:mb-8 sm:w-[80%] sm:mx-auto md:w-[45%] bg-[#EAEAEB] rounded-md md:border"></div>
+          <div className="mb-12 xs:mb-8 xs:w-[90%] xs:h-[20rem] xs:mx-auto sm:mb-8 sm:w-[80%] sm:mx-auto md:w-[45%] bg-[#EAEAEB] rounded-md md:border overflow-hidden md:w-[40%] md:h-fit">
+            <img src={project1} alt='Profile Picture' className="xs:w-full xs:h-auto"></img>
+          </div>
           
-          <div className="mb-12 xs:mb-0 xs:w-[90%] xs:h-[20rem] xs:mx-auto sm:mb-8 sm:w-[80%] sm:mx-auto md:w-[45%] bg-[#EAEAEB] rounded-md"></div>
+          <div className="mb-12 xs:mb-0 xs:w-[90%] xs:h-[20rem] xs:mx-auto sm:mb-8 sm:w-[80%] sm:mx-auto md:w-[45%] bg-[#EAEAEB] rounded-md md:w-[40%] overflow-hidden md:h-fit">
+            <img src={project1} alt='Profile Picture' className="xs:w-full xs:h-auto"></img>
+          </div>
 
         </div>
 
