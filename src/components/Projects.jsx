@@ -39,81 +39,26 @@ const Projects = () => {
 
   return (
     <>
-      <div id="projects" className="w-full bg-backgroundColor flex-col items-center justify-around">
+      <div id="projects" className="w-full bg-backgroundColor flex flex-row justify-around">
 
-            <div ref={row1} className="w-full xs:w-full xs:flex-col xs:justify-center xs:items-center sm:flex sm:justify-center md:flex-row md:justify-around opacity-0 transition-opacityTopSlide duration-500 ease-in">
+            
 
-              <div className="mb-12 xs:w-[90%] xs:h-[20rem] xs:mx-auto sm:w-[80%] sm:mx-auto md:w-[35%] bg-[#EAEAEB] rounded-md md:border overflow-hidden md:w-[40%] md:h-fit relative">
-                <img src={project1} alt='Project 1' className="xs:w-full xs:h-auto"></img>
-                
-                <div className="w-full h-20 absolute bottom-0 pt-8 bg bg-[#788AA3] flex justify-between">
-                  <div className="w-1/2 h-25 text-white flex flex-col justify-center items-center hover:bg-gray-400 border">
-                    <a href="https://github.com/adamkr98/todoList_1" className="text-white text-center block py-8 px-6">CODE</a>
-                  </div>
+            
+      <div className="w-full min-h-screen bg-white flex flex-wrap justify-around">
 
-                  <div className="w-1/2 h-25 text-white flex flex-col justify-center items-center hover:bg-gray-400 border">
-                    <a href="https://adamkr98.github.io/todoList_1/" className="text-white text-center block py-2 px-6">WEBSITE</a>
-                  </div>
-              </div>
+{Array.from({ length: 8 }).map((_, index) => (
+  <div key={index} className="xs:w-full sm:w-full md:w-2/4 lg:w-1/3 xl:w-1/4 flex flex-col xs:items-center sm:justify-around p-5 mr-1">
+    <div className="xs:w-[90%] sm:w-[29rem] md:w-[20rem] lg:w-[22rem] h-[20rem] border-2 border-backgroundColor">
+    </div>
+    <p className="font-bold font-sans pl-5 mt-5">Lorem ipsum dolor.</p>
+    <p className="font-bold font-thin pl-5 h-[3rem]">Lorem ipsum dolor sit amet consectetur.</p>
+  </div>
+))}
 
-
-              </div>
-
-              <div className="mb-12 xs:w-[90%] xs:h-[20rem] xs:mx-auto sm:w-[80%] sm:mx-auto md:w-[35%] bg-[#EAEAEB] rounded-md md:border overflow-hidden md:w-[40%] md:h-fit relative">
-                <img src={project1} alt='Project 1' className="xs:w-full xs:h-auto"></img>
-                
-                <div className="w-full h-20 absolute bottom-0 pt-8 bg bg-[#788AA3] flex justify-between">
-                  <div className="w-1/2 h-25 text-white flex flex-col justify-center items-center hover:bg-gray-400 border">
-                      <a href="https://github.com/adamkr98/todoList_1" className="text-white text-center block py-8 px-6">CODE</a>
-                    </div>
-
-                    <div className="w-1/2 h-25 text-white flex flex-col justify-center items-center hover:bg-gray-400 border">
-                      <a href="https://adamkr98.github.io/todoList_1/" className="text-white text-center block py-2 px-6">WEBSITE</a>
-                    </div>
-                    
-                  </div>
-
-              </div>
-
-            </div>
-
-            <div ref={row2} className="w-full xs:w-full xs:flex-col xs:justify-center xs:items-center sm:flex sm:justify-center md:flex-row md:justify-around opacity-0 transition-opacityTopSlide duration-500 ease-in">
-
-              <div className="xs:mb-12 xs:w-[90%] xs:h-[20rem] xs:mx-auto sm:w-[80%] sm:mx-auto md:w-[35%] bg-[#EAEAEB] rounded-md md:border overflow-hidden md:w-[40%] md:h-fit relative md:mt-12">
-                <img src={project1} alt='Project 1' className="xs:w-full xs:h-auto"></img>
-                
-                <div className="w-full h-20 absolute bottom-0 pt-8 bg bg-[#788AA3] flex justify-between">
-                  <div className="w-1/2 h-25 text-white flex flex-col justify-center items-center hover:bg-gray-400 border">
-                    <a href="https://github.com/adamkr98/todoList_1" className="text-white text-center block py-8 px-6">CODE</a>
-                  </div>
-
-                  <div className="w-1/2 h-25 text-white flex flex-col justify-center items-center hover:bg-gray-400 border">
-                    <a href="https://adamkr98.github.io/todoList_1/" className="text-white text-center block py-2 px-6">WEBSITE</a>
-                  </div>
-
-                </div>
-
-              </div>
-
-              <div className=" xs:w-[90%] xs:h-[20rem] xs:mx-auto sm:w-[80%] sm:mx-auto md:w-[35%] bg-[#EAEAEB] rounded-md md:border overflow-hidden md:w-[40%] md:h-fit relative">
-                <img src={project1} alt='Project 1' className="xs:w-full xs:h-auto"></img>
-                
-                <div className="w-full h-20 absolute bottom-0 pt-8 bg bg-[#788AA3] flex justify-between">
-                <div className="w-1/2 h-25 text-white flex flex-col justify-center items-center hover:bg-gray-400 border">
-                    <a href="https://github.com/adamkr98/todoList_1" className="text-white text-center block py-8 px-6">CODE</a>
-                  </div>
-
-                  <div className="w-1/2 h-25 text-white flex flex-col justify-center items-center hover:bg-gray-400 border">
-                    <a href="https://adamkr98.github.io/todoList_1/" className="text-white text-center block py-2 px-6">WEBSITE</a>
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
 </div>
 
+      
+      </div>
      </>
   );
 };

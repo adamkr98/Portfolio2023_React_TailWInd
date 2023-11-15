@@ -10,6 +10,7 @@ module.exports = {
       },
       colors: {
         backgroundColor: '#011627',
+        backgroundComplColor: "#FF9F1C",
       },
       transitionDuration: {
         '800': '800ms', 

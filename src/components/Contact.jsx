@@ -13,6 +13,7 @@ const publicKEY = process.env.REACT_APP_PUBLIC_KEY;
 const Contact = () => {
 
     const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+    const [isEmptyInput, setIsEmptyInput] = useState(false);
     const form = useRef();
     const succes = useRef();
   
@@ -47,6 +48,14 @@ const Contact = () => {
         }
       }, [isFormSubmitted]);
 
+      const handleTypo = (e) => {
+        setIsEmptyInput(e.target.value);
+      }
+
+      useEffect(() =>{
+        console.log(isEmptyInput);
+      },[isEmptyInput])
+
     return (
    
     <div id='contact' className='xs:w-full sm:w-full lg:w-full xl:w-full h-[90vh] xs:bg-red xs:flex xs:flex-col xs:flex-col-reverse xs:items-center xs:justify-center sm:flex sm:flex-col-reverse md:w-full md:flex-row md:justify-around md:items-center lg:flex lg:flex-row xl:flex xl:flex-row bg-backgroundColor'>
@@ -55,11 +64,11 @@ const Contact = () => {
             <div className='w-full flex'>
                 <div className='w-1/2 h-fit flex flex-col mb-2'>
                     <label htmlFor="name" className='w-full h-fit text-white'>Name</label>
-                    <input id='name' name="user_name" type="text" placeholder='Insert your name' className='w-[90%] h-[2rem] border bg-transparent text-white pl-2' required />
+                    <input  id='name' name='user_name' type='text' placeholder='Insert your name' className={`w-[90%] h-[2.5rem] border bg-transparent text-backgroundComplColor pl-2 ${ isEmptyInput ? 'border border-backgroundComplColor' : 'border border-white' }` } required/>
                 </div>
                 <div className='w-1/2 h-fit flex flex-col mb-4'>
                     <label htmlFor="email" className='w-full h-fit text-white'>Email</label>
-                    <input id='email' name="user_email" type="email" placeholder='Insert your email addresse' className='w-[90%] h-[2rem] border bg-transparent text-white pl-2' required />
+                    <input id='email' name='user_email' type='email' placeholder='Insert your email addresse' className={`w-[90%] h-[2.5rem] border border-white bg-transparent text-backgroundComplColor pl-2 ${ isEmptyInput ? 'border border-backgroundComplColor' : 'border border-white' }`} required/>
                 </div>
             </div>
 
@@ -67,7 +76,7 @@ const Contact = () => {
                 <div className='w-1/2 h-fit flex-col mb-4'>
                     <label htmlFor="subject" className='w-full h-fit text-white'>Subject</label>
                     
-                    <select id='subject' name="subject" type="text" className='w-[90%] h-[2rem] mb-2 border bg-transparent text-white pl-2' required >
+                    <select id='subject' name="subject" type="text" className={`w-[90%] h-[2.5rem] mb-2 border bg-transparent text-white pl-2 ${ isEmptyInput ? 'border-backgroundComplColor' : 'border border-white' }`} required >
                         <option value="default_option" disabled selected hidden></option>
                         <option value="Starting_a_project" className='text-black'>Starting a project</option>
                         <option value="Maintenance_of_a_website" className='text-black'>Maintenance of a website</option>
@@ -77,12 +86,15 @@ const Contact = () => {
 
                 <div className='w-full h-fit'>
                     <label htmlFor="message" className='text-white'>Message</label>
-                    <textarea type="text" name="message" id='message' placeholder='Write a message' className='w-[95%] h-[6rem] mb-4 border bg-transparent text-white pl-2 pt-2'required />
+                    <textarea type="text" name="message" id="message" placeholder="Write a message" className={`w-[95%] h-[6rem] max-h-[10rem] mb-4 border bg-transparent text-backgroundComplColor pl-2 pt-2 ${ isEmptyInput  ? 'border-backgroundComplColor' : '' }`} required
+/>
+
                 </div>
 
             </div>
            <div>
-            <button type="submit" value="send" className='w-fit h-fit pl-3 pr-3 pt-2 pb-2 rounded-md border border-white text-white hover:bg-white hover:text-backgroundColor'>Submit</button>
+
+            <button type="submit" onClick={(e)=>{handleTypo(e)}} value="send" className='w-fit h-fit pl-3 pr-3 pt-2 pb-2 rounded-md border border-white text-white hover:bg-white hover:text-backgroundColor'>Submit</button>
            </div>
         </form>
 
